@@ -1,4 +1,3 @@
-```javascript
 function getCurrentState(trafficLight) {
   return trafficLight.possibleStates[trafficLight.stateIndex];
 }
@@ -38,4 +37,3 @@ main();
 4 The traffic light is now 🟠
 5 The traffic light is now 🔴
 */
-```
