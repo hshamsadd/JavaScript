@@ -1,5 +1,4 @@
 ```javascript
-
 function getCurrentState(trafficLight) {
   return trafficLight.possibleStates[trafficLight.stateIndex];
 }
@@ -32,14 +31,11 @@ main();
 
 /**
  * The output should be:
-
 0 The traffic light is now 🟢
 1 The traffic light is now 🟠
 2 The traffic light is now 🔴
 3 The traffic light is now 🟢
 4 The traffic light is now 🟠
 5 The traffic light is now 🔴
-
 */
-
 ```
