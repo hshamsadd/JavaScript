@@ -1,4 +1,4 @@
-```javascript
+```js
 function getCurrentState(trafficLight) {
   return trafficLight.possibleStates[trafficLight.stateIndex];
 }
