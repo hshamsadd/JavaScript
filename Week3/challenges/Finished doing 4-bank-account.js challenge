@@ -27,11 +27,30 @@ const bankAccount = {
   ],
 };
 
+const makeTransaction = (amount, reason, onSuccess, onFail) => {
+  if (bankAccount.currentBalance < amount) {
+    onFail();
+    return;
+  }
+  const prevAmount = bankAccount.currentBalance;
+  bankAccount.currentBalance -= amount;
+  const transaction = {
+    prevAmount: prevAmount,
+    newAmount: bankAccount.currentBalance,
+    reason: reason[0].toUpperCase() + reason.slice(1),
+  };
+  bankAccount.transactions.push(transaction);
+  onSuccess();
+};
+
 const donateMoney = (amount, onSuccess, onFail) => {
   // TODO complete this function
+  makeTransaction(amount, "donation", onSuccess, onFail);
 };
+
 const payRent = (amount, onSuccess, onFail) => {
   // TODO complete this function
+  makeTransaction(amount, "rent", onSuccess, onFail);
 };
 
 /**
