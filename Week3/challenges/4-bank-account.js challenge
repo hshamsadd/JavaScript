@@ -9,6 +9,7 @@
  * TIP: a lot of the things the functions do are the same, you may want to create one or more other functions to not duplicate code
  */
 
+```javascript
 const bankAccount = {
   // The currentBalance is how much money you have in your bankAccount.
   currentBalance: 250,
@@ -79,7 +80,7 @@ console.log(bankAccount);
 
 donateMoney(100, onSuccessDutch, onFailDutch);
 console.log(bankAccount);
-
+```
 /**
 * The console should print out the following:
 Payment successful! Thank you!
